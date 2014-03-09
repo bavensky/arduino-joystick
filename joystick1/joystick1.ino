@@ -35,8 +35,7 @@ void loop() {
   Serial.print("E:"),Serial.print(digitalRead(select_button));Serial.print(",");
   Serial.print("A:"),Serial.print(digitalRead(analog_button));Serial.print(",");
   Serial.print("X:"),Serial.print(map(analogRead(x_axis), 0, 1000, -1, 1));Serial.print(",");
-  Serial.print("Y:"),Serial.println(map(analogRead(y_axis), 0, 1000, -1, 1)); 
-  
+  Serial.print("Y:"),Serial.println(map(analogRead(y_axis), 0, 1000, -1, 1));
  }
 
 
