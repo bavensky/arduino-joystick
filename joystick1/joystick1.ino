@@ -26,7 +26,7 @@ void setup() {
 }
 
 void loop() {
-  delay(200);
+  delay(35);
   Serial.print("U:"),Serial.print(digitalRead(up_button));Serial.print(",");
   Serial.print("D:"),Serial.print(digitalRead(down_button));Serial.print(",");
   Serial.print("L:"),Serial.print(digitalRead(left_button));Serial.print(",");
@@ -34,8 +34,7 @@ void loop() {
   Serial.print("S:"),Serial.print(digitalRead(start_button));Serial.print(",");
   Serial.print("E:"),Serial.print(digitalRead(select_button));Serial.print(",");
   Serial.print("A:"),Serial.print(digitalRead(analog_button));Serial.print(",");
-  Serial.print("X:"),Serial.print(map(analogRead(x_axis), 0, 1000, -1, 1));Serial.print(",");
-  Serial.print("Y:"),Serial.println(map(analogRead(y_axis), 0, 1000, -1, 1));
+  Serial.print("X:"),Serial.print(analogRead(x_axis));Serial.print(",");
+  Serial.print("Y:"),Serial.println(analogRead(y_axis));
  }
-
 
